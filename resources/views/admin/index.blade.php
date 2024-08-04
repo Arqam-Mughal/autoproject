@@ -9,7 +9,7 @@
                             <i class="fa fa-money-check-dollar fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Current Balance</p>
-                                <h6 class="mb-0">${{$balance}} </h6>
+                                <h6 class="mb-0">$ </h6>
                             </div>
                         </div>
                     </div>
@@ -18,7 +18,7 @@
                             <i class="fa fa-chart-area fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Today Revenue</p>
-                                <h6 class="mb-0">$ {{$total}} </h6>
+                                <h6 class="mb-0">$  </h6>
                             </div>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                             <i class="fa fa-chart-pie fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Referral Bonus</p>
-                                <h6 class="mb-0">$ {{$ref_bonus}} </h6>
+                                <h6 class="mb-0">$  </h6>
                             </div>
                         </div>
                     </div>

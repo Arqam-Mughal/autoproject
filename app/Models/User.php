@@ -22,6 +22,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'ref_code'
     ];
 
     public function user_details(): HasOne
@@ -55,5 +56,6 @@ class User extends Authenticatable
     {
         return $this->hasOne(UserDetail::class,'u_id','id');
     }
+
 
 }

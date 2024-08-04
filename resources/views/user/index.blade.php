@@ -51,13 +51,18 @@
                         <div class="row justify-content-center align-items-center mb-3">
                             <label for="inputReferral" class="col-sm-2 col-form-label"><strong>Referral Link</strong></label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="inputReferral" value="https://www.example.comn/?ref=123" readonly>
+                                @php
+                                    $id = Auth::user()->id;
+                                    $refer = App\Models\User::where('id',$id)->first();
+                                @endphp
+                                <input type="text" class="form-control" id="inputReferral" value="http://localhost:8000/register?ref_code={{ $refer->ref_code }}" readonly>
                             </div>
                             <div class="col-sm-2">
-                                <button type="button" class="btn btn-sm btn-success" id="refButton"> <i class="fa fa-regular fa-copy"></i> Copy Link</button>
+                                <button type="button" class="btn btn-sm btn-success" id="refButton">
+                                    <i class="fa fa-regular fa-copy"></i> Copy Link
+                                </button>
                             </div>
                         </div>
-
                     </form>
                 </div>
             </div>

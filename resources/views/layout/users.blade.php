@@ -177,6 +177,7 @@
 
     <!-- Template Javascript -->
     <script src="{{ asset('dashboard/js/main.js')}}"></script>
+    <script src="{{ asset('frontend/assets/js/custom.js') }} "></script>
 </body>
 
 </html>
