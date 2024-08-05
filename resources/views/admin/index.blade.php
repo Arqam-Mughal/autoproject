@@ -45,7 +45,7 @@
             <!-- Sales and Revenue End -->
 
             <!-- Referral Link Start -->
-            <div class="container-fluid pt-4 px-4">
+            {{-- <div class="container-fluid pt-4 px-4">
                 <div class="bg-light text-center rounded p-4">
                     <form action="#">
                         <div class="row justify-content-center align-items-center mb-3">
@@ -60,7 +60,7 @@
 
                     </form>
                 </div>
-            </div>
+            </div> --}}
 
 
             <!-- Referral Link End -->

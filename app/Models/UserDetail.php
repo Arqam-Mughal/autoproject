@@ -14,6 +14,6 @@ class UserDetail extends Model
 
     public function team_info()
     {
-        return $this->belongsTo(User::class,'id');
+        return $this->belongsTo(User::class,'u_id');
     }
 }

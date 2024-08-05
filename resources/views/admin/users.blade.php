@@ -35,8 +35,9 @@
                         <td>{{ '$' . optional($user->users_info)->current_balance ?: '0.00' }}</td>
                         <td>{{ '$' . optional($user->users_info)->total_earning ?: '0.00' }}</td>
                         <td>{{ '$' . optional($user->users_info)->ref_bonus ?: '0.00' }}</td>
-                        <td> <a href="{{ route('user.updateStatus', $user->id) }}" class="btn btn-sm btn-{{ $user->users_info->status? 'success' : 'danger'}}">
-                            {{ $user->users_info->status ? 'Enable' : 'Disable' }}
+
+                        <td class="text-center"><a href="{{ route('user.updateStatus', $user->id) }}" class="btn btn-sm btn-{{ ($user->users_info->status == 1) ? 'success' : 'danger'}}">
+                            {{ ($user->users_info->status == 1) ? 'Enable' : 'Disable' }}
                         </a> </td>
                         <td>
                             <form action="{{route('admin.destroy_user',$user->id)}}" method="post" class="d-inline-block">
@@ -45,6 +46,7 @@
                                 <button type="submit" class="btn btn-sm btn-outline-danger "> <i class="fa fa-trash-alt"></i></button>
                             </form>
                         </td>
+
                     </tr>
                     @endforeach
                 </tbody>

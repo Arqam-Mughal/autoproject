@@ -51,7 +51,16 @@
                     <div class="col-lg-12">
                         <fieldset>
                             <label for="password">Referral Code</label>
+
+                            @if(request('ref_code'))
+
+                            <input type="text" name="ref_code" id="ref_code" placeholder="Optional..." readonly autocomplete="on" value="{{ request('ref_code') }}">
+
+                            @else
+
                             <input type="text" name="ref_code" id="ref_code" placeholder="Optional..." autocomplete="on" value="{{ request('ref_code') }}">
+
+                            @endif
                         </fieldset>
                     </div>
                     <div class="col-lg-12">

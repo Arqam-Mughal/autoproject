@@ -95,8 +95,8 @@ Route::prefix('admin')->group(function () {
         Route::get('users', 'index')->name('admin.users');
         Route::get('users/create', 'create')->name('admin.create_user');
         Route::get('users/{$id}/edit', 'edit')->name('admin.edit_user');
-        Route::get('users/{$id}/delete', 'destroy')->name('admin.destroy_user');
-        // Route::get('users/{id}', 'updateStatus')->name('user.updateStatus');
+        Route::delete('users/{id}/delete', 'destroy')->name('admin.destroy_user');
+        Route::get('users/{id}', 'updateStatus')->name('user.updateStatus');
     });
 
     Route::get('withdrawls', function () {
